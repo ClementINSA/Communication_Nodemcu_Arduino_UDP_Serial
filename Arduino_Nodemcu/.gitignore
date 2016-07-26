@@ -1,0 +1,4 @@
+# Git does not manage the file containing passwords
+WifiAccess.h
+# Create the WifiAccess.h file thanks to WifiAccessTemplate.h 
+
