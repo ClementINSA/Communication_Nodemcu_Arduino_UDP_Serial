@@ -116,7 +116,7 @@ void loop()
   while (! Serial.available()) 
   {
   }
-  message = Serial.readString();
+  message = Serial.readStringUntil('\n');
   
   // réémission du message en UDP
   Udp.beginPacket(DEST_IP, DEST_PORT);
