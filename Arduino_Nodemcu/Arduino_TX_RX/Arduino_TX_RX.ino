@@ -44,7 +44,7 @@ void loop()
     Serial.print(".");
     delay(10);
   }
-  message = mySerial.readString();
+  message = mySerial.readStringUntil('\n');
   Serial.println(message);
   
   // Décodage du message et allumage des LEDs
